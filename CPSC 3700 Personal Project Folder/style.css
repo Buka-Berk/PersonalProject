@@ -1,0 +1,180 @@
+/* Home Section of website CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", "sams-serif";
+    box-sizing: "border-box";
+}
+body{
+    background: #F8F0E3;
+    color: black;
+    size: 1;
+}
+
+/*Main body styling*/
+#header{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    padding: 5px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 170px;
+    height: 170px;
+}
+.logo2 {
+    width: 450px;
+    height: 350px;
+    position: absolute; 
+    right: 7%;
+    border-radius: 30px;
+}
+.linkedIn {
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    left: 10%;
+    top: 25%;
+}
+
+/*Navigation Menu Styling*/
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color:black;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.777s;
+
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/*Header styling*/
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 55px;
+    margin-top: 10px;
+}
+.header-text h1 span{
+    color: #000080;
+}
+
+
+/* About Section styling */
+#about{
+    padding: 80px 0;
+    color: black;
+    margin-top: -700px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-column{
+    flex-basis: 40%;
+}
+.about-column{
+    width: 100%;
+    border-radius: 23px;
+}
+.about-column2{
+    flex-basis: 61%;
+}
+.s-title{
+    font-size: 60px;
+    font-weight: 555;
+    color: black;
+}
+.tab-titles{
+    display: flex;
+    margin: 22px 0 41px;
+    text-decoration: underline;
+}
+.tab-links{
+    margin-right: 50px;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+}
+.tab-links::after{
+    content: ' ';
+    width: 0;
+    height: 4px;
+    background-color: black;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+/*helps style text and div containers inside list.*/
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: black;
+    font-size: 15px;
+    font-weight: 200;
+}
+.tab-contents{
+    display: none;   
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* Services Section */
+#services {
+    padding: 30px 0;
+    text-align: center;
+    margin-top: -700px;
+}
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div {
+    background: #2b6391;
+    padding: 40px;
+    font-size: 20px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    font: sans-serif;
+}
+.services-list div:hover {
+    background: #d3d3d3;
+    transform: translateY(-10px);
+}

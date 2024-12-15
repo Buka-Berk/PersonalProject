@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function submitForm() {
+            alert("form submitted");
+        }
+    </script>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Student Registration Form</h2>
+        <form onsubmit="submitForm(); return false;">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+            
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+            
+            <label for="year-of-school">Year of School:</label>
+            <select id="year-of-school" name="year-of-school" required>
+                <option value="freshman">Freshman</option>
+                <option value="sophomore">Sophomore</option>
+                <option value="junior">Junior</option>
+                <option value="senior">Senior</option>
+            </select>
+            
+            <label for="major">Major department:</label>
+            <select id="major" name="major" required>
+                <option value="College of Arts and Sciences">Arts and Sciences</option>
+                <option value="College of sciences and Engineering">sciences and engineering</option>
+                <option value="Alber's school of business">business</option>
+                <option value="college of nursing">college of nursing</option>
+            </select>
+
+            <input type="submit" value="submit">
+            </form>
+        </div>
